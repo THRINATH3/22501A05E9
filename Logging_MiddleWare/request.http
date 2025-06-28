@@ -1,0 +1,35 @@
+post http://20.244.56.144/evaluation-service/register
+Content-Type: application/json
+
+{
+    "email" : "thrinathpothineni@gmail.com",
+    "name"  : "Pothineni Thrinath",
+    "mobileNo" : "9347001342",
+    "githubUsername" : "THRINATH3",
+    "rollNo" : "22501A05E9",
+    "accessCode" : "eHWNzt" 
+}
+###
+
+post http://20.244.56.144/evaluation-service/auth
+Content-Type: application/json
+
+{
+    "email" : "thrinathpothineni@gmail.com",
+    "name"  : "Pothineni Thrinath",
+    "rollNo" : "22501A05E9",
+    "accessCode" : "eHWNzt" ,
+    "clientID": "4b319d88-13b2-4b00-819f-22451d5a991d",
+    "clientSecret": "kuXjZSUtHezCbPYJ"
+}
+
+###
+post http://20.244.56.144/evaluation-service/logs
+Content-Type: application/json
+
+{
+    "stack": "frontend",
+    "level": "error",
+    "package":"hook",
+    "message":"received string,expected bool"
+}
