@@ -23,13 +23,14 @@ Content-Type: application/json
     "clientSecret": "kuXjZSUtHezCbPYJ"
 }
 
-###
+### Logging middle-ware framework
 post http://20.244.56.144/evaluation-service/logs
 Content-Type: application/json
+Authorization: 4b319d88-13b2-4b00-819f-22451d5a991d:kuXjZSUtHezCbPYJ
 
 {
-    "stack": "frontend",
+    "stack": "backend",
     "level": "error",
-    "package":"hook",
-    "message":"received string,expected bool"
+    "package":"hanler",
+    "message":"received string, expected a bool"
 }
